@@ -2,8 +2,10 @@ a=input()
 b=a.lower()
 l=[]
 for i in b:
-    if b.count(i)==1 and i!=" ":
+    if i!=" ":
         l.append(i)
-l.sort()
-for i in l:
+x=set(l)
+y=list(x)
+y.sort()
+for i in y:
     print(i,end='')
